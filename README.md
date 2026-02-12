@@ -20,14 +20,18 @@ Simple Spring Boot application that demonstrates how to create a REST API. It in
    git clone https://github.com/csc340-uncg/sp26-rest-api-demo.git
    ```
 2. Open the project in your IDE (e.g., VSCode, IntelliJ, Eclipse).
-3. Build the project using Maven:
-   ```
-   mvn clean install
-   ```
-4. Run the application:
-   ```
-    mvn spring-boot:run
-   ```
+
+3. Build and run the application. You can use the command line or your IDE's run configuration.
+
+   - Using command line (make sure the JAVA_HOME environment variable is set to Java 25):
+     ```
+     ./mvnw spring-boot:run
+     ```
+
+   - Using IDE:
+     - In IntelliJ, right-click on `RestApiDemoApplication.java` and select "Run".
+     - In Eclipse, right-click on `RestApiDemoApplication.java`, select "Run As", and then "Java Application".
+     - In VSCode, open the `RestApiDemoApplication.java` file and click on the "Run" icon above the main method.
 
 ## API Endpoints
 
@@ -41,7 +45,9 @@ Simple Spring Boot application that demonstrates how to create a REST API. It in
 - `GET /api/fruit?name={name}`: Fetches data from an external API (FruityVice).
 
 ## Testing
+
 You can test the API endpoints using tools like Postman. For example, to add a new student, send a POST request to `http://localhost:8080/api/students` with the following JSON body:
+
 ```json
 {
   "id": 1,
@@ -51,4 +57,3 @@ You can test the API endpoints using tools like Postman. For example, to add a n
   "gpa": 3.5
 }
 ```
-
