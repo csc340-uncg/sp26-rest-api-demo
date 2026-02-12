@@ -86,7 +86,7 @@ public class RestApiController {
    * @return response entity containing the added student object or a 400 Bad
    *         Request response if a student with the same ID already exists.
    */
-  @PostMapping("/students/add")
+  @PostMapping("/students")
   public ResponseEntity<Student> addStudent(@RequestBody Student student) {
     Long id = student.getId();
     if (studentDatabase.containsKey(id)) {
@@ -109,7 +109,7 @@ public class RestApiController {
    * @return response entity containing the updated student object or a 404 Not
    *         Found response if no student with the specified ID exists.
    */
-  @PutMapping("/students/update/{id}")
+  @PutMapping("/students/{id}")
   public ResponseEntity<Student> updateStudent(@PathVariable("id") Long id, @RequestBody Student updatedStudent) {
     if (studentDatabase.containsKey(id)) {
       studentDatabase.put(id, updatedStudent);
@@ -130,7 +130,7 @@ public class RestApiController {
    *         successfully or a 404 Not Found response if no student with the
    *         specified ID exists.
    */
-  @DeleteMapping("/students/delete/{id}")
+  @DeleteMapping("/students/{id}")
   public ResponseEntity<Void> deleteStudent(@PathVariable("id") Long id) {
     if (studentDatabase.containsKey(id)) {
       studentDatabase.remove(id);
