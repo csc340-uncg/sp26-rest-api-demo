@@ -19,7 +19,7 @@ Simple Spring Boot application that demonstrates how to create a REST API. It in
    ```
    git clone https://github.com/csc340-uncg/sp26-rest-api-demo.git
    ```
-2. Open the project in your IDE (e.g., IntelliJ, Eclipse).
+2. Open the project in your IDE (e.g., VSCode, IntelliJ, Eclipse).
 3. Build the project using Maven:
    ```
    mvn clean install
