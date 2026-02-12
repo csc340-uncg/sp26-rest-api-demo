@@ -23,12 +23,12 @@ Simple Spring Boot application that demonstrates how to create a REST API. It in
 
 3. Build and run the application. You can use the command line or your IDE's run configuration.
 
-   - Using command line (make sure the JAVA_HOME environment variable is set to Java 25):
+   - Using command line (make sure the JAVA_HOME environment variable is set to Java 25 and the PATH variable includes the Java 25 bin directory):
      ```
      ./mvnw spring-boot:run
      ```
 
-   - Using IDE:      
+   - Using IDE:
      - In VSCode, open the `RestApiDemoApplication.java` file and click on the "Run" icon above the main method.
      - In IntelliJ, right-click on `RestApiDemoApplication.java` and select "Run".
      - In Eclipse, right-click on `RestApiDemoApplication.java`, select "Run As", and then "Java Application".
