@@ -28,10 +28,10 @@ Simple Spring Boot application that demonstrates how to create a REST API. It in
      ./mvnw spring-boot:run
      ```
 
-   - Using IDE:
+   - Using IDE:      
+     - In VSCode, open the `RestApiDemoApplication.java` file and click on the "Run" icon above the main method.
      - In IntelliJ, right-click on `RestApiDemoApplication.java` and select "Run".
      - In Eclipse, right-click on `RestApiDemoApplication.java`, select "Run As", and then "Java Application".
-     - In VSCode, open the `RestApiDemoApplication.java` file and click on the "Run" icon above the main method.
 
 ## API Endpoints
 
